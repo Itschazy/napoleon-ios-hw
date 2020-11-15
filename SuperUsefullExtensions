@@ -1,0 +1,20 @@
+import Foundation
+
+extension Int {
+  func increment() -> Int{
+    return self + 1
+  }
+  func isEven() -> Bool {
+        if (self % 2 == 0) {
+            return true
+        }
+        return false
+    }
+}
+
+extension String {
+  func oCounter() -> Int {
+    let counter = self.filter { $0 == "o" }.count
+    return counter
+  }
+}
